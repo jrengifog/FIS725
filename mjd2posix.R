@@ -1,0 +1,1 @@
+mjd2posix<-format(as.POSIXct('1899-12-30')+(mydata$Time_MJD*24*60*60),"%Y-%m-%d %H:%M:%OS3"
