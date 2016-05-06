@@ -48,7 +48,7 @@ t1->Branch("py2", &py2,"py2/F");
 t1->Branch("pz2", &pz2,"pz2/F");
 t1->Branch("E1", &E1,"E1/F");
 t1->Branch("E2", &E1,"E2/F");
-for(Long64_t i=0; i<100; i++){
+for(Long64_t i=0; i<1000; i++){
 t1->Fill();
 }
 t1->Write();
