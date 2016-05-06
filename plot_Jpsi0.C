@@ -39,15 +39,22 @@ Float_t px2, py2, pz2;
 Float_t E1,E2;
 
 TBranch*newBranch=t1->Branch("px1", &px1,"px1/F");
-TBranch*newBranch=t1->Branch("py1", &px1,"py1/F");
-TBranch*newBranch=t1->Branch("pz1", &px1,"pz1/F");
-TBranch*newBranch=t1->Branch("px2", &px1,"px2/F");
-TBranch*newBranch=t1->Branch("py2", &px1,"py2/F");
-TBranch*newBranch=t1->Branch("pz2", &px1,"pz2/F");
-TBranch*newBranch=t1->Branch("E1", &px1,"E1/F");
-TBranch*newBranch=t1->Branch("E2", &px1,"E2/F");
+TBranch*newBranch1=t1->Branch("py1", &py1,"py1/F");
+TBranch*newBranch2=t1->Branch("pz1", &pz1,"pz1/F");
+TBranch*newBranch3=t1->Branch("px2", &px2,"px2/F");
+TBranch*newBranch4=t1->Branch("py2", &py2,"py2/F");
+TBranch*newBranch5=t1->Branch("pz2", &pz2,"pz2/F");
+TBranch*newBranch6=t1->Branch("E1", &E1,"E1/F");
+TBranch*newBranch7=t1->Branch("E2", &E1,"E2/F");
 for(Long64_t i=0; i<100; i++){
 newBranch->Fill();
+newBranch1->Fill();
+newBranch2->Fill();
+newBranch3->Fill();
+newBranch4->Fill();
+newBranch5->Fill();
+newBranch6->Fill();
+newBranch7->Fill();
 }
  /*
 
